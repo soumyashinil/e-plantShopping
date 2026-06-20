@@ -1,8 +1,6 @@
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
+    width: 100%; /* Take up available space */
+    max-width: 1000px; /* Restrict it from getting too wide next to the landing content */
     text-align: justify;
   }
   
