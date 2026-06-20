@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .landing-page {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #f8f8f8;
 }
@@ -19,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-image: url("/public/images/bg.jpg");
   background-size: 100% 100%;
   background-position: center;
   filter: brightness(0.8);
@@ -29,22 +28,19 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
- top: 100px;
+  width: 100%; /* Changed from 100vw to avoid scrollbar layout calculation bugs */
+  padding: 0 40px; /* Adds a safety cushion on the extreme left/right sides */
   backdrop-filter: blur(4px);
-  background-color: rgba(0,0,0,0.5);
-  gap: 20px;
+  /* background-color: rgba(132, 95, 95, 0.5); */
+  background-color: rgba(155, 129, 129, 0.5);
+  gap: 40px;
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  /* background-color: red; */
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px; /* Prevents it from scaling out of control */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -67,9 +63,9 @@
 }
 
 .divider {
-  width: 50px;
+  width: 100px;
   height: 2px;
-  background-color: #4caf50;
+  background-color: #b1888e;
   margin: 10px 0;
 }
 
@@ -78,7 +74,7 @@
   font-size: 23px;
   border: none;
   border-radius: 5px;
-  background-color: #4caf50;
+  background-color: #b1888e;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -86,7 +82,7 @@
 }
 
 .get-started-button:hover {
-  background-color: #45a049;
+  background-color: #d8b2b7;
 }
 
 /* ProductList.css */
