@@ -182,7 +182,7 @@
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column; /* Change flex direction to stack items vertically */
-    align-items: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Align items to the start of the container */
     width: 100%; /* Set width to full width */
   }
 
@@ -195,10 +195,15 @@
 
   .cart-item-details {
     width: 100%; /* Set details width to full width */
+    text-align: center;
   }
 
   .cart-item-quantity {
-    margin-top: 10px; /* Add margin top for spacing */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;
+    gap: 10px; /* space between buttons */
   }
 }
 
