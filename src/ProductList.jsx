@@ -197,7 +197,10 @@ function ProductList({ onHomeClick }) {
       <div className="navbar" style={styleObj}>
         <div className="tag">
           <div className="luxury">
-            <img src={"/images/logo.png"} alt="" />
+            <img
+              src={`${import.meta.env.BASE_URL}/images/logo.png`}
+              alt="Logo"
+            />
             <a href="/" onClick={(e) => handleHomeClick(e)}>
               <div>
                 <h3 style={{ color: "white" }}>Little Leaf Nursery</h3>
